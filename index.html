@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Grident Background*/
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+        }
+        /*Centered Card*/
+        .login-container{
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+            padding: 20px 40px;
+            text-align: center;
+            width: 300px;
+        }
+
+        /*Neon input fields*/
+        .login-container input{
+            width: 100%;
+            padding: 10px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size:  16px;
+            outline: none;
+            background: #333;
+            color: #fff;
+            box-shadow: 0 0 5px #00f,0 0 10px #00f;
+        }
+        /*Neon button*/
+        .login-container button{
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            background: linear-gradient(135deg, #ff512f,#f09819);
+            color: white;
+            box-shadow: 0 0 10px #f09819, 0 0 20px #ff512f;
+            transition: transform 0.2s;
+        }
+        .login-container button:hover{
+            transform: scale(1.05);
+            box-shadow: 0 0 15px #ff512f, 0 0 25px #f09819;
+        }
+
+        /*Heading*/
+        .login-container h2{
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-shadow: 0 0 10px #fff, 0 0 20px #ff512f;
+       }
+    </style>
+</head>
+<body>
+   <div class="login-container">
+    <h2>Neon Login</h2>
+    <form>
+        <input type="text"
+        placeholder="Username"required>
+    <input type="password"
+    placeholder="Password"required>
+    <button type="submit">Login</button>
+</form>
+   </div>
+</body>
+</html>
